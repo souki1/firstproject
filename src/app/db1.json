@@ -1,0 +1,18 @@
+{
+    
+    "mobile":[
+        {
+            "id":"1",
+            "mobilename":"iphone",
+            "model":"X",
+            "year":2013
+        },
+        {
+            "id":2,
+            "mobilename":"Realme",
+            "model":"Gt",
+            "year":2021
+        }
+    ]
+
+}

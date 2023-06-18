@@ -1,0 +1,55 @@
+<p>main works!</p>
+<!-- one waway data binding in angular  -->
+<!--  string interpolation {{ }} -->
+<h2> {{num1}} + {{num2}} = {{total}} </h2>
+
+<h1>{{str}}</h1>
+
+<h2> {{arr}}</h2>
+
+<h2> Hi this is one way data binding {{strarray}} {{arr}}</h2>
+
+<h2>{{dynamicarray}}</h2>
+
+<!--  event binding () -->
+<button type="button" class="btn btn-primary" (click)="buttonclicked()" >Primary</button>
+
+<!--  one way binding/ String interpolation -->
+
+<h2>{{click}}</h2>
+
+<!-- event binding() is a one way bind  -->
+<button type="button" class="btn btn-danger" (click)="danger()" >Danger</button>
+
+<!-- Property Binding -->
+
+
+  <button type="button" class="btn btn-warning" [disabled]="value" >Warning</button>
+
+
+  <input type="text" [value]="inputvalue">
+  {{inputvalue}}
+    <br>
+    <br>
+  <!--  class binding part of property binding -->
+  <button [class]="buttoncolor">button</button>
+  <br>
+  <button [class]="buttoncolor" [style.background]="color" [style.color]="whitecolor">color</button>
+
+
+<br>
+<br>
+<br>
+
+  <!-- Two way binding  -->
+  <!-- [()] to bind html to ts  -->
+  <input type="text" [(ngModel)]="twoway" >
+  <!-- {{}} for output from ts to html-->
+
+  <h3>{{twoway}}</h3>
+
+
+  <input type="text" [(ngModel)]="bindingvalues">
+
+
+  <h2>{{bindingvalues}}</h2>

@@ -1,0 +1,18 @@
+<h2>{{empl}}</h2>
+<button (click)="showHide()">Api data</button>
+<h2 *ngIf="value">
+
+  <h2 *ngFor="let i of empl" >
+    {{i.id}} {{i.name}} {{i.empno}} {{i.address}}
+  </h2>
+</h2>
+<!-- step 4 -->
+<br>
+<br>
+<div>
+  <!-- <input type="text" [(ngModel)]="emp.id"> <br> -->
+  <input type="text" [(ngModel)]="emp.name"> <br>
+  <input type="text" [(ngModel)]="emp.empno"><br>
+  <input type="text" [(ngModel)]="emp.address"> <br>
+  <button (click)="postemp()">submit</button>
+</div>

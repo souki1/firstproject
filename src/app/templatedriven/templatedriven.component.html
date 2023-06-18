@@ -1,0 +1,23 @@
+<p>templatedriven works!</p>
+<div class="mb-3 container">
+
+    <form #contact="ngForm" (ngSubmit)="onsubmit(contact)">
+        <label for="firstname" class="form-label"> First Name</label>
+        <input class="form-control" type="text"  minlength="4" #firstname="ngModel"  id="firstname" name="firstname" ngModel >
+        <span *ngIf="firstname.invalid">pls enter correct username</span>
+        <br>
+        <label for="lastname" class="form-label">Last Name</label>
+        <input class="form-control" type="text" #lastname="ngModel" id="lastname" name="lastname" ngModel>
+        <span *ngIf="lastname&& lastname.invalid">pls enter correct </span>
+        <br>
+        <label for="email" class="form-label">email</label>
+        <input  class="form-control" type="email" id="email" minlength="8"  #email="ngModel" name="email" ngModel>
+        <span *ngIf="email && email.invalid&& email.touched">pls enter correct email</span>
+        <br>
+        <label for="password" class="form-label">Password</label>
+        <input class="form-control" type="password" #password="ngModel" minlength="8" maxlength="12" id="password" name="password" ngModel>
+        <span style="color:red" *ngIf="password && password.invalid && password.touched">pls enter correct password</span>
+        <br>
+        <button class="btn btn-primary" [disabled]="contact.invalid" >submit</button>
+    </form>
+</div>

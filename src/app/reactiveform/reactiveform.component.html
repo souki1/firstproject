@@ -1,0 +1,26 @@
+<p>reactiveform works!</p>
+
+<h1>Hi this is reactive form</h1>
+
+<form action="" [formGroup]="contactForm" (ngSubmit)="onsubmit()" novalidate>
+
+    <label for="firstname">firstname</label>
+    <input type="text" id="firstname" name="firstname" formControlName="firstname">
+    <span *ngIf="firstname&& firstname.touched&& firstname.invalid"> pls enter correct values </span>
+   
+    <br>
+    <label for="lastname">Lastname</label>
+    <input type="text" id="lastname" name="lastname" formControlName="lastname">
+
+    <br>
+    <label for="email">email</label>
+    <input type="email" id="email" name=" email" formControlName="email">
+        <br>
+    <label for="password">password</label>
+    <input type="password" id="password" name="password" formControlName="password" >
+    <br>
+    <button type="submit" [disabled]="contactForm.invalid">Submit</button>
+</form>
+
+<h2>{{contactForm.invalid}}</h2>
+<h2>{{contactForm.touched}}</h2>

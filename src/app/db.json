@@ -1,0 +1,52 @@
+{
+  "employee": [
+    {
+      "id": 1,
+      "name": "girish",
+      "empno": 199,
+      "address": "mumbai"
+    },
+    {
+      "id": 2,
+      "name": "girish1",
+      "empno": 599,
+      "address": "mumbai1"
+    },
+    {
+      "id": 3,
+      "name": "girish2",
+      "empno": 699,
+      "address": "Hyderabad"
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "name": "girish",
+      "empno": "10",
+      "address": "hyd",
+      "id": 6
+    },
+    {
+      "name": "virat",
+      "empno": "18",
+      "address": "delhi",
+      "id": 7
+    },
+    {
+      "name": "dhoni",
+      "empno": "7",
+      "address": "che",
+      "id": 8
+    },
+    {
+      "name": "kumar",
+      "empno": "600",
+      "address": "banglore",
+      "id": 9
+    }
+  ]
+}

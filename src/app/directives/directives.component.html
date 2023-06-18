@@ -1,0 +1,48 @@
+<p>directives works!</p>
+
+<h2>Hi this is ngIf</h2>
+
+<h2 *ngIf="bool==true">when boolean is true print this  </h2>
+
+<h2 *ngIf="bool==false">when boolean is false print this to user  </h2>
+
+<!-- two way binding -->
+<input type="text" [(ngModel)]="num">
+
+<h2 *ngIf="num==10"> num values is 10</h2>
+<h2 *ngIf="num!=10">Num values is not {{num}}</h2>
+
+
+
+<!-- NgFor directive  -->
+
+<table class="table" >
+    <thead>
+      <tr>
+        <th scope="col" >id</th>
+        <th scope="col">First name</th>
+        <th scope="col">Last name</th>
+        <th scope="col">marks</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr   *ngFor="let i of table" >
+        <th appCustomDirective scope="row">{{i.id}}</th>
+        <td>{{i.firstname}}</td>
+        <td>{{i.lastname}}</td>
+        <td>{{i.marks}}</td>
+      </tr>
+
+
+    </tbody>
+  </table>
+
+
+
+  <!--  Attribute classes -->
+  <!-- ng class -->
+  <button [class]="button"  >submit</button>
+  <!--  ng style  -->
+  <br>
+  <button appCustomDirective [style.color]="buttonstyle" [ngClass]="button">reset</button>
+  <h2 appCustomDirective >Custom directive </h2>

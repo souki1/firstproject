@@ -1,0 +1,22 @@
+<p>dataapi works!</p>
+<h2>{{value}}</h2>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">title</th>
+        <th scope="col">Completed</th>
+        <!-- <th scope="col">Marks</th> -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of apidatavalue">
+        <th>{{i.id}}</th>
+        <td>{{i.title}}</td>
+        <td>{{i.completed}}</td>
+        <!-- <td>{{i.marks}}</td> -->
+      </tr>
+     
+     
+    </tbody>
+  </table>

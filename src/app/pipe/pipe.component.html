@@ -1,0 +1,30 @@
+<p>pipe works!</p>
+
+<h2>Hi today we are implementing pipes</h2>
+<p>Built in pipes</p>
+
+<!-- <h2>{{str | uppercase }}</h2>
+
+<h2>{{str|titlecase}}</h2>
+<h2>{{str|slice:0}}</h2> -->
+
+<p>date implementing</p>
+<h2>{{date|date:"mediumTime"}}</h2>
+<h2>{{ date |date:"fullDate" |uppercase}}</h2>
+
+<p>number values trhough pipes</p>
+<h2>{{num1|currency:"CAD"|uppercase}}</h2>
+<h2>{{num1|currency:'CAD':'symbol':'4.2-2'}}</h2>
+
+<input type="text" [(ngModel)]="num2">
+<h3> Indian Ruppe {{num2*82|currency:"INR"}}</h3>
+<h2> Us Doller{{num2|currency}}</h2>
+
+
+<input type="text" [(ngModel)]="strpipe">
+<h2>{{strpipe|statement}}</h2>
+
+<h1>Number custom pipe</h1>
+<input type="text" [(ngModel)]="numpipe">
+<h2>{{numpipe|statement|currency:"INR"}}</h2>
+
